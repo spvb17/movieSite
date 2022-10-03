@@ -24,8 +24,8 @@
         <ul class="menu">
             <li><a href="#" id="menuHome">Home</a></li>
             <li><a href="#" id="menuMovies">Movies</a></li>
-            <li><a href="#" id="menuSeries">Series</a></li>
-            <li><a href="#" id="menuRegister">Register</a></li>
+            <li><a href="series.html" id="menuSeries">Series</a></li>
+            <li><a href="#" id="menuRegister">Login</a></li>
         </ul>
 
         <!--Theme changer-------------------------------------->
@@ -226,6 +226,41 @@
         <p>Midterm project work, Web technologies</p>
     </footer>
 
+    <div class="modal">
+        <div class="modalclosebtn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="rememberme">
+                <label for="rememberme">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button id="signupbtn">Sign up</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="socialmedias">
+        <ul>
+            <li><a href="https://t.me/spvb17"><img src="images/sc-telegram-pngrepo-com.png" id="telegramicon"></a></li>
+            <li><a href="https://www.instagram.com/spvb17"><img src="images/icon-instagram-png-transparent-instagram-images-25.png" id="telegramicon"></a></li>
+            <li><a href="mailto:bsaparaliyev19@mail.ru"><img src="images/mailru.png" id="mailruicon"></a></li>
+            <li><a href="mailto:29545@iitu.edu.kz"><img src="images/microsoft.png" id="mailruicon"></a></li>
+            <li><a href="mailto:29545@iitu.edu.kz"><img src="images/coding+development+github+programming+website+icon-1320168263506646852.png" id="mailruicon"></a></li>
+        </ul>
+    </div>
+
     <!--script-->
     <script>
     $(document).ready(function() {
@@ -239,6 +274,7 @@
       });
     </script>
     <script src="js/themechanger.js"></script>
+    <script src="js/formopener.js"></script>
     <!--script-->
 </body>
 </html>
