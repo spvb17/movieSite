@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saparaliev Begzhan</title>
-    <link rel="stylesheet" href="css/serieslightmode.css" id="changer">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Series</title>
+    <link rel="stylesheet" href="css/serieslightmode.css" id="serieschanger">
+    <link rel="stylesheet" href="css/lightslider.css" id="csschanger">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
 </head>
+
 <body>
-   <nav>
+    <nav>
         <a href="draft.html" class="logo"><img src="images/logo.png"></a>
-        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
         <label class="menu-icon" for="menu-btn">
             <span class="nav-icon"></span>
         </label>
         <ul class="menu">
-            <li><a href="draft.html" id="menuHome">Home</a></li>
-            <li><a href="#" id="menuMovies">Movies</a></li>
+            <li><a href="home.html" id="menuHome">Home</a></li>
+            <li><a href="draft.html" id="menuMovies">Movies</a></li>
             <li><a href="#" id="menuSeries">Series</a></li>
             <li><a href="#" id="menuRegister">Login</a></li>
         </ul>
@@ -33,13 +38,183 @@
                 </button>
             </div>
             <div class="search">
-                <input type="text" placeholder="Find what you want"/>   
+                <input type="text" placeholder="Find what you want" />
                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 <img src="images/search-512.png" id="searchPng">
             </div>
         </div>
         <!--Theme changer--------------------------------------->
     </nav>
+    <section id="main1">
+        <h1 class="showcase-heading1">Ongoing</h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box"><img src="images/sex educaation.jpg"></div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box"><img src="images/houseofthedragon.jpg"></div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box"><img src="images/ring power.jpg"></div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box"><img src="images/the walking dead.jpg"></div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box"><img src="images/strangerthings.jpg"></div>
+            </li>
+            <li class="item-f">
+                <div class="showcase-box"><img src="images/theboys.jpg"></div>
+            </li>
+            <li class="item-g">
+                <div class="showcase-box"><img src="images/euphoria.jpg"></div>
+            </li>
+        </ul>
+    </section>
+    <section id="main">
+        <h1 class="showcase-heading">Marvel Series</h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box"><img src="images/hawkeye.jpg"></div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box"><img src="images/she hulk.jpg"></div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box"><img src="images/wanda vision.jpg"></div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box"><img src="images/ms marvel.jpg"></div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box"><img src="images/what if.jpg"></div>
+            </li>
+            <li class="item-f">
+                <div class="showcase-box"><img src="images/falcon-winter-soldier-image-1.jpg"></div>
+            </li>
+        </ul>
+    </section>
+    <section id="main">
+        <h1 class="showcase-heading">Fantasy</h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box"><img src="images/strangerthings.jpg"></div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box"><img src="images/game_of_thrones_0.jpg"></div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box"><img src="images/ragnarok.jpg"></div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box"><img src="images/thewitcher.jpg"></div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box"><img src="images/strangerthings.jpg"></div>
+            </li>
+            <li class="item-f">
+                <div class="showcase-box"><img src="images/houseofthedragon.jpg"></div>
+            </li>
+            <li class="item-g">
+                <div class="showcase-box"><img src="images/ring power.jpg"></div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="main">
+        <h1 class="showcase-heading">Thriller </h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box"><img src="images/fargo.jpg"></div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box"><img src="images/13 reasons why.jpg"></div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box"><img src="images/chernobyl.jpg"></div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box"><img src="images/dark.jpg"></div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box"><img src="images/lie to me.jpg"></div>
+            </li>
+            <li class="item-f">
+                <div class="showcase-box"><img src="images/squad game.jpg"></div>
+            </li>
+        </ul>
+    </section>
+    <section id="main">
+        <h1 class="showcase-heading">Action movie</h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box"><img src="images/band of brothersjpg.jpg"></div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box"><img src="images/true-detective-wide.jpg"></div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box"><img src="images/the wire.jpg"></div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box"><img src="images/breaking bad.jpg"></div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box"><img src="images/game_of_thrones_0.jpg"></div>
+            </li>
+            <li class="item-f">
+                <div class="showcase-box"><img src="images/chernobyl.jpg"></div>
+            </li>
+            <li class="item-g">
+                <div class="showcase-box"><img src="images/dark.jpg"></div>
+            </li>
+        </ul>
+    </section>
+    <div class="footer">
+        <p>Saparaliev Begzhan</p>
+        <p>Midterm project work, Web technologies</p>
+        <p>Sarsenbaev Damirbek</p>
+    </div>
+
+    <div class="modal">
+        <div class="modalclosebtn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="rememberme">
+                <label for="rememberme">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button id="signupbtn">Sign up</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth, #autoWidth2').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth, #autoWidth2').removeClass('cs-hidden');
+                }
+            });
+        });
+    </script>
     <script src="js/seriesthemechanger.js"></script>
-</body> 
+    <script src="js/formopener.js"></script>
+</body>
+
+
 </html>

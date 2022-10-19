@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css" id="home-changer">
+    <link rel="stylesheet" href="css/lightslider.css" id="csschanger">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="#" id="menuHome">Home</a></li>
+            <li><a href="draft.html" id="menuMovies">Movies</a></li>
+            <li><a href="series.html" id="menuSeries">Series</a></li>
+            <li><a href="#" id="menuRegister">Login</a></li>
+        </ul>
+
+        <!--Theme changer-------------------------------------->
+        <div class="searchSwitch">
+            <div class="themeClass">
+                <button id="themeButton">
+                    <img src="img/15751.png" id="themeImages">
+                </button>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Find what you want"/>   
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <img src="images/search-512.png" id="searchPng">
+            </div>
+        </div>
+        <!--Theme changer--------------------------------------->
+    </nav>
+
+    <section id="main">
+        <h1 class="showcase-heading">Novelty</h1>
+        <ul id="autoplay" class="cs-hidden">
+            <li class="item-a"><div class="showcase-box"><img src="images/wanda-banner.jpg"></div></li>
+            <li class="item-b"><div class="showcase-box"><img src="images/transformers_13-wallpaper-1920x1080.jpg"></div></li>
+            <li class="item-c"><div class="showcase-box"><img src="images/venom.jpg"></div></li>
+            <li class="item-d"><div class="showcase-box"><img src="images/ironman.png   "></div></li>
+            <li class="item-f"><div class="showcase-box"><img src="images/bat0.jpg"></div></li>
+            <li class="item-g"><div class="showcase-box"><img src="images/blood.jpg"></div></li>
+          </ul>
+    </section>
+
+
+
+
+
+
+
+    <!--modal window-->
+    <div class="modal">
+        <div class="modalclosebtn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="rememberme">
+                <label for="rememberme">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button id="signupbtn">Sign up</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainHomeSection">
+        <div id="mainhometext">
+            You may like
+        </div>
+        <img src="images/35074-Black-Panther-4k-2018-poster-Chadwick-Boseman.jpg">
+    </div>
+
+    <div class="pricelistname">
+        <div class="df">
+            Pricelist
+        </div>
+    </div>
+    <div class="pricelist">
+        <div class="pricelistdiv">
+            <div id="prlist">
+                <span id="pricename">Basic</span>
+                <span id="price">0.00$/month</span>
+            </div>
+            <div class="btn">
+                <a href="#">Purchase</a>
+            </div>
+        </div>
+        <div class="pricelistdiv">
+            <div id="prlist">
+                <span id="pricename">Premium</span>
+                <span id="price">5.99$/month</span>
+            </div>
+            <div class="btn">
+                <a href="#">Purchase</a>
+            </div>
+        </div>
+        <div class="pricelistdiv">
+            <div id="prlist">
+                <span id="pricename">Vip</span>
+                <span id="price">12.99$/month</span>
+            </div>
+            <div class="btn">
+                <a href="#">Purchase</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Saparaliev Begzhan</p>
+        <p>Midterm project work, Web technologies</p>
+        <p>Sarsenbaev Damirbek</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+    var autoplaySlider = $('#autoplay').lightSlider({
+        auto:true,
+        loop:true,
+        pauseOnHover: true,
+        onBeforeSlide: function (el) {
+            $('#current').text(el.getCurrentSlideCount());
+        } 
+    });
+    $('#total').text(autoplaySlider.getTotalSlideCount());
+});
+    </script>
+    <script src="js/themechangerhome.js"></script>
+    <script src="js/formopener.js"></script>
+    <!--modal window-->
+</body>
+</html>

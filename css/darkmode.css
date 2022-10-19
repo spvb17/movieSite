@@ -522,7 +522,7 @@ footer p{
     cursor: pointer;  
 }
 
-.popup .form .form-element a{
+.modal .form .form-element a{
     display: block; 
     text-align: right; 
     font-size: 15px; 
